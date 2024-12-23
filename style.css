@@ -180,7 +180,7 @@ img{
     letter-spacing: 1px;
 }
 
-.swiper-slide-content p:nth-child(2) {
+.swiper-slide-content-description {
     font-size: 22px;
     color: #1e1d24;
     font-family: "Poppins", "sans-serif";
@@ -188,7 +188,7 @@ img{
     font-weight: 600;
 }
 
-.swiper-slide-content p:nth-child(3) {
+.swiper-slide-content-contact-information {
     font-size: 26px;
     color: #252525;
     font-family: "Poppins", "sans-serif";
@@ -203,7 +203,7 @@ img{
     gap: 30px;
 }
 
-.swiper-slide-content-buttons button:nth-child(1){
+.swiper-slide-content-contact-devis-button{
     padding: 15px;
     color: white;
     font-family: "Oswald", "sans-serif";
@@ -220,13 +220,13 @@ img{
     transition: .5s ease;
 }
 
-.swiper-slide-content-buttons button:nth-child(1):hover{
+.swiper-slide-content-contact-devis-button{
     color: #8DC63F;
     background-color: #FFFFFF;
 
 }
 
-.swiper-slide-content-buttons button:nth-child(2){
+.swiper-slide-content-contact-about-button{
     padding: 15px;
     color: #8DC63F;
     font-family: "Oswald", "sans-serif";
@@ -243,12 +243,12 @@ img{
     transition: .5s ease;
 }
 
-.swiper-slide-content-buttons button:nth-child(2):hover{
+.swiper-slide-content-contact-about-button{
     color: #FFFFFF;
     background-color: #8DC63F;
 }
 
-.swiper-slide-content p:nth-child(5){
+.swiper-slide-content-contact-final-information{
     font-size: 18px;
     color: #1e1d24;
     font-family: "Oswald", "sans-serif";
@@ -349,7 +349,9 @@ img{
 
 /* Services Style End */
 
-.reclam {
+/* Paint Persone Start */
+
+.paint-persone {
     width: 100%;
     height: 400px;
     display: flex;
@@ -359,13 +361,13 @@ img{
     background-color: #8DC63F;
 }
 
-.reclam-foto {
+.paint-persone-foto {
     display: flex;
     align-self: flex-end;
     width: 700px;
 }
 
-.reclam-content {
+.paint-persone-content {
     display: flex;
     flex-direction: column;
     gap: 23px;
@@ -373,20 +375,20 @@ img{
     margin-left: 30px;
 }
 
-.reclam-content h2 {
+.paint-persone-content h2 {
     color: #FFFFFF;
     font-family: "Oswald", "sans-serif";
     font-size: 34px;
 }
 
-.reclam-content p {
+.paint-persone-content p {
     color: #FFFFFF;
     font-family: "Poppins", "sans-serif";
     font-size: 22px;
     font-style: normal;
 }
 
-.reclam-content button {
+.paint-persone-content button {
     font-family: "Oswald", "sans-serif";
     font-size: 18px;
     font-style: normal;
@@ -402,7 +404,120 @@ img{
     transition: .3s ease;
 }
 
-.reclam-content button:hover{
+.paint-persone-content button:hover{
     border: 1px solid #2a6b84;
     color: #2a6b84;
+}
+
+/* Paint Persone End */
+
+.about-us {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    width: 100%;
+    margin-top: 80px;
+    padding-left: 100px;
+    padding-right: 50px;
+}
+
+.about-us-title {
+    font-family: "Oswald", "sans-serif";
+    font-style: normal;
+    font-size: 36px;
+    text-transform: uppercase;
+    color: #1e1d24;
+    letter-spacing: 1px;
+}
+
+.abou-us-stars {
+    display: flex;
+    gap: 15px;
+}
+
+.abou-us-stars i {
+    font-size: 22px;
+    color: #ffd14b;
+}
+
+.about-us-text {
+    width: 800px;
+}
+
+.about-us-text p {
+    font-family: "Poppins", "sans-serif";
+    font-size: normal;
+    font-size: 18px;
+    font-weight: 400;
+    color: #1e1d24;
+}
+
+.about-us-content {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    margin-top: 30px;
+}
+
+.about-us-content-information-block {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.about-us-content-information-icon i {
+    font-size: 72px;
+    color: #8DC63F;
+}
+
+.about-us-content-information {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.about-us-content-information h2 {
+    font-family: "Oswald", "sans-serif";
+    font-style: normal;
+    font-size: 28xp;
+    color: #2a6b84;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.about-us-content-information p {
+    font-family: "Poppins", "sans-serif";
+    font-style: normal;
+    font-size: 18px;
+    font-weight: 500;
+    color: #252525;
+}
+
+.galery {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 80px;
+}
+
+.galery-title {
+    font-family: "Oswald", "sans-serif";
+    font-style: normal;
+    font-size: 36px;
+    text-transform: uppercase;
+    color: #1e1d24;
+    letter-spacing: 1px;
+    margin-bottom: 30px;
+}
+
+.galery-row {
+    display: flex;
+    width: 1200px;
+    gap: 5px;
+}
+
+.galery-row-image-box {
+    width: 300px;
 }
