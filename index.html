@@ -21,7 +21,7 @@
 </head>
 <body>
     <!-- Header Start -->
-    <div class="header">
+    <div class="header" id="Header">
         <div class="header-logo">
             <h2>RENOVATION BATTIMENT</h2>
         </div>
@@ -40,14 +40,19 @@
     
     <!-- Navbar Start -->
     <div class="navbar">
-        <div class="navbar-items">
-            <ul>
+            <ul class="navbar-items">
                 <li><a href="">Accueil</a></li>
                 <li><a href="">Services</a></li>
                 <li><a href="">Projets</a></li>
                 <li><a href="">Contacts</a></li>
             </ul>
+
+        <div class="hamburger">
+            <span class="hamburger-span1"></span>
+            <span class="hamburger-span2"></span>
+            <span class="hamburger-span3"></span>
         </div>
+
         <div class="social-media">
             <a href="" target="_blank"><i class="fab fa-facebook"></i></a>
             <a href="" target="_blank"><i class="fab fa-tiktok"></i></a>
@@ -83,7 +88,7 @@
                             <button class="swiper-slide-content-contact-devis-button">Obtenez un devis gratuit</button>
                             <button class="swiper-slide-content-contact-about-button">En savoir plus sur nous</button>
                         </div>
-                        <p>Nos spécialistes s'engagent à résoudre votre projet rapidement et efficacement.</p>
+                        <p class="swiper-slide-content-contact-final-information">Nos spécialistes s'engagent à résoudre votre projet rapidement et efficacement.</p>
                     </div>
                 </div>
             </div>
@@ -97,7 +102,7 @@
                             <button class="swiper-slide-content-contact-devis-button">Obtenez un devis gratuit</button>
                             <button class="swiper-slide-content-contact-about-button">En savoir plus sur nous</button>
                         </div>
-                        <p>Nos spécialistes s'engagent à résoudre votre projet rapidement et efficacement.</p>
+                        <p class="swiper-slide-content-contact-final-information">Nos spécialistes s'engagent à résoudre votre projet rapidement et efficacement.</p>
                     </div>
                 </div>
             </div>
@@ -111,7 +116,7 @@
                             <button class="swiper-slide-content-contact-devis-button">Obtenez un devis gratuit</button>
                             <button class="swiper-slide-content-contact-about-button">En savoir plus sur nous</button>
                         </div>
-                        <p>Nos spécialistes s'engagent à résoudre votre projet rapidement et efficacement.</p>
+                        <p class="swiper-slide-content-contact-final-information">Nos spécialistes s'engagent à résoudre votre projet rapidement et efficacement.</p>
                     </div>
                 </div>
             </div>
@@ -248,7 +253,111 @@
             </div>
         </div>
      </div>
+     <!-- The Modal/Lightbox -->
+    <div id="myModal" class="modal">
+        <span class="close-cursor">&times;</span>
+        <div class="modal-content">
+  
+            <div class="mySlides active">
+                <div class="numbertext">1 / 8</div>
+                <img src="./images/XSKY0513.JPG" alt="">
+            </div>
+  
+            <div class="mySlides">
+                <div class="numbertext">2 / 8</div>
+                <img src="./images/QPZO0335.JPG" alt="">
+            </div>
+  
+            <div class="mySlides">
+                <div class="numbertext">3 / 8</div>
+                <img src="./images/ANLE4166.JPG" alt="">
+            </div>
+  
+            <div class="mySlides">
+                <div class="numbertext">4 / 8</div>
+                <img src="./images/EAKO0114.JPG" alt="">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">5 / 8</div>
+                <img src="./images/EGCE0963.JPG" alt="">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">6 / 8</div>
+                <img src="./images/CAOY1224.JPG" alt="">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">7 / 8</div>
+                <img src="./images/RHCZ2115.JPG" alt="">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">8 / 8</div>
+                <img src="./images/ERGN3422.JPG" alt="">
+            </div>
+  
+            <!-- Next/previous controls -->
+            <a class="prev">&#10094;</a>
+            <a class="next">&#10095;</a>
+        </div>
+    </div>
     <!-- Galery End -->
+
+    <!-- Get Started Start -->
+     <div class="get-started">
+        <div class="get-started-content">
+            <h4 class="get-started-content-title">Commencez dès maintenant</h4>
+            <p class="get-started-content-subtitle">Planifiez votre devis gratuit</p>
+            <p class="get-started-content-title-description">Nous avons l'expertise nécessaire pour peindre toutes les surfaces, des nouvelles constructions aux propriétés commerciales.</p>
+            <button class="get-started-content-button">Obtenez un devis gratuit</button>
+        </div>
+        <div class="get-started-img">
+            <img src="./images/png-transparent-brown-paint-brush-art-paintbrush-painting-brushes-pencil-photography-color-removebg-preview.png" alt="">
+        </div>
+     </div>
+    <!-- Get Started End -->
+
+    <div class="footfer">
+        <div class="footer-content">
+            <div class="footer-content-about">
+                <h3>À propos de nous</h3>
+                <p>Nous sommes une équipe de professionnels expérimentés, spécialisés dans les travaux de peinture et de rénovation intérieure en France. Depuis plusieurs années, nous aidons nos clients à transformer leurs espaces en lieux élégants et confortables.</p>
+            </div>
+            <div class="footer-content-contact">
+                <h3>Contact</h3>
+                <div class="footer-contact-phone">
+                  <i class='fas fa-phone'></i>
+                  <p>+33 6 75 92 48 74</p>
+                </div>
+                <div class="footer-contact-adresse">
+                  <i class='fas fa-map-marker-alt'></i>
+                  <p class="footer-contact-adresse-p">Alsace Bas-Rhin Haut-Rhin</p>
+                </div>
+                <div class="footer-contact-email">
+                  <i class="fas fa-envelope"></i>
+                  <p>mejlumyanmamikon85@gmail.com</p>
+                </div>
+            </div>
+            <div class="footer-content-links">
+                <h3>Navigation</h3>
+              <ul>
+                  <li><a href="#Header">Accueil</a></li>
+                  <li><a href="#header">Services</a></li>
+                  <li><a href="#footer">Projets</a></li>
+                  <li><a href="#livrasion">Contacts</a></li>
+              </ul>
+            </div>
+            <div class="footer-content-social">
+                <h3>Suivez-nous</h3>
+                <a href="https://www.instagram.com/fast.chicken67?igsh=MTJxNG50ZHA2bzdlMg%3D%3D&utm_source=qr" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.facebook.com/profile.php?id=61565013658117&sk=about" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="https://www.tiktok.com/@fastchicken0?_t=8ovUjlJg5WC&_r=1" target="_blank"><i class="fab fa-tiktok"></i></a>
+            </div>
+        </div>
+        </div>
+    </div>
 
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
