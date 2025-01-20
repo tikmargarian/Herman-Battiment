@@ -14,6 +14,7 @@ img{
     display: flex;
     flex-direction: column;
     overflow: hidden;
+    scroll-behavior: smooth;
 }
 
 /* Header Style Start */
@@ -913,7 +914,7 @@ img{
 
 .swiper-slide-content {
     gap: 15px;
-    padding: 80px;
+    padding: 40px;
     border-radius: 5px;
 }
 
@@ -1447,4 +1448,72 @@ img{
 }
 
 /* Footer Media Style End */
+}
+
+@media (max-width: 555px) {
+    .header {
+        padding: 0 5px;
+    }
+    /* Swiper Media Style Start */
+
+
+.swiper-slide-content {
+    gap: 15px;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+}
+
+@media (max-width: 450px) {
+    .swiper-slide-content {
+        gap: 15px;
+        /* padding: 40px; */
+        border-radius: 5px;
+    }
+    
+    .swiper-slide-content h2 {
+        font-size: 22px;
+        letter-spacing: 1px;
+    }
+    
+    .swiper-slide-content-description {
+        font-size: 13px;
+        font-weight: 600;
+    }
+    
+    .swiper-slide-content-contact-information {
+        font-size: 15px;
+        font-weight: 600;
+    }
+    
+    .swiper-slide-content-buttons {
+        gap: 30px;
+    }
+    
+    .swiper-slide-content-contact-devis-button{
+        padding: 5px;
+        font-weight: 500;
+        font-size: 10px;
+    }
+    
+    .swiper-slide-content-contact-devis-button{
+        color: #8DC63F;
+        background-color: #FFFFFF;
+    
+    }
+    
+    .swiper-slide-content-contact-about-button{
+        padding: 5px;
+        font-weight: 500;
+        font-size: 10px;
+    }
+    
+    
+    .swiper-slide-content-contact-final-information{
+        font-size: 12px;
+        font-weight: 600;
+        letter-spacing: 0.5px;
+    }
+    /* Swiper Media Style End */
 }
