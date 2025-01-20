@@ -8,13 +8,16 @@ img{
     width: 100%;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 #app {
     width: 100%;
     height: 100%;
     display: flex;
     flex-direction: column;
     overflow: hidden;
-    scroll-behavior: smooth;
 }
 
 /* Header Style Start */
@@ -246,11 +249,12 @@ img{
     transition: .5s ease;
 }
 
-.swiper-slide-content-contact-devis-button{
-    color: #8DC63F;
-    background-color: #FFFFFF;
-
+.swiper-slide-content-contact-devis-button:hover {
+    background-color: whitesmoke;
+    border: 1px solid #2a6b84;
+    color: #2a6b84;
 }
+
 
 .swiper-slide-content-contact-about-button{
     padding: 15px;
@@ -269,10 +273,12 @@ img{
     transition: .5s ease;
 }
 
-.swiper-slide-content-contact-about-button{
-    color: #FFFFFF;
+.swiper-slide-content-contact-about-button:hover{
     background-color: #8DC63F;
+    color: whitesmoke;
+    border: 1px solid #8DC63F;
 }
+
 
 .swiper-slide-content-contact-final-information{
     font-size: 18px;
@@ -708,7 +714,7 @@ img{
 }
 
 .get-started-img {
-    width: 300px;
+    width: 400px;
 }
 /* Get Started Style End */
 
@@ -1237,6 +1243,7 @@ img{
 }
 
 .get-started-content {
+    order: 2;
     width: 100%;
     padding: 0 10px;
     margin: 15px 0;
@@ -1262,7 +1269,11 @@ img{
 }
 
 .get-started-img {
-    width: 180px;
+    display: flex;
+    align-self: flex-start;
+    order: 1;
+    width: 250px;
+    margin-top: 15px;
 }
 /* Get Started Media Style End */
 
