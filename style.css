@@ -128,8 +128,13 @@ html {
 }
 
 .navbar .social-media i {
-    font-size: 26px;
+    font-size: 30px;
     color: #FFFFFF;
+    transition: .3s ease;
+}
+
+.navbar .social-media i:hover {
+    color: #252525;
 }
 /* Navbar Style End */
 
@@ -190,7 +195,7 @@ html {
     align-items: center;
     flex-direction: column;
     gap: 30px;
-    background-color: rgba(255, 255, 255, .8);
+    background-color: rgba(255, 255, 255, .6);
     padding: 80px;
     border-radius: 5px;
     opacity: 0;
@@ -226,6 +231,10 @@ html {
     font-family: "Poppins", "sans-serif";
     font-style: normal;
     font-weight: 600;
+    text-decoration: none;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none; 
+    user-select: none;
 }
 
 .swiper-slide-content-buttons {
@@ -841,31 +850,16 @@ html {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 5px;
 }
 
 .header-logo {
-    font-size: 16px;
+    font-size: 22px;
 }
 
 .header-contacts {
-    display: flex;
+    display: none;
     flex-direction: column;
     gap: 5px;
-}
-
-.header-contacts .header-contacts-phone, .header-contacts-email {
-    gap: 10px;
-}
-
-.header-contacts .header-contacts-phone i, .header-contacts-email i{
-    font-size: 16px;
-}
-
-.header-contacts .header-contacts-phone p, .header-contacts-email p {
-    font-size: 14px;
-    letter-spacing: 0.5px;
-    font-weight: 600;
 }
 /* Header Media Style End */
 
@@ -950,12 +944,6 @@ html {
     padding: 10px;
     font-weight: 500;
     font-size: 10px;
-}
-
-.swiper-slide-content-contact-devis-button{
-    color: #8DC63F;
-    background-color: #FFFFFF;
-
 }
 
 .swiper-slide-content-contact-about-button{
