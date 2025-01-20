@@ -322,7 +322,7 @@ img{
 }
 
 .services-row {
-    width: 1050px;
+    min-width: 1100px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -388,6 +388,8 @@ img{
 }
 
 .paint-persone-foto {
+    display: flex;
+    align-self: flex-end;
     width: 700px;
 }
 
@@ -915,12 +917,10 @@ img{
 .swiper-slide-content {
     gap: 15px;
     padding: 40px 20px;
-    border-radius: 5px;
 }
 
 .swiper-slide-content h2 {
     font-size: 24px;
-    letter-spacing: 1px;
 }
 
 .swiper-slide-content-description {
@@ -970,7 +970,7 @@ img{
 }
 
 .services-title h1 {
-    font-size: 28px;
+    font-size: 32px;
 }
 
 .services-row {
@@ -980,16 +980,10 @@ img{
 
 .service-nom{
     font-size: 28px;
-    font-style: normal;
-    font-family: "Oswald", "sans-serif";
-    color: #1e1d24;
-    text-transform: uppercase;
 }
 
 .service-description {
-    text-align: center;
     font-size: 16px;
-    font-family: "Poppins", "sans-serif";
     font-weight: 500;
 }
 
@@ -1005,50 +999,38 @@ img{
     flex-direction: column;
     gap: 10px;
     margin-top: 50px;
-    padding: 15px 0;
-    background-color: #8DC63F;
+    padding: 0 15px;
 }
 
 .paint-persone-foto {
     display: flex;
+    align-self: center;
     width: 350px;
+    order: 2;
 }
 
 .paint-persone-content {
+    width: 100%;
     display: flex;
     flex-direction: column;
-    gap: 23px;
-    width: 100%;
-    margin-left: 30px;
+    order: 1;
+    gap: 10px;
+    margin: 15px 0;
 }
 
 .paint-persone-content h2 {
-    color: #FFFFFF;
-    font-family: "Oswald", "sans-serif";
     font-size: 18px;
 }
 
 .paint-persone-content p {
-    color: #FFFFFF;
-    font-family: "Poppins", "sans-serif";
-    font-size: 12px;
-    font-style: normal;
+    font-size: 14px;
+    font-weight: 500;
 }
 
 .paint-persone-content button {
-    font-family: "Oswald", "sans-serif";
     font-size: 12px;
-    font-style: normal;
-    letter-spacing: 1px;
     font-weight: 700;
-    text-transform: uppercase;
-    padding: 5px;
-    border: none;
-    border: 1px solid #8DC63F;
-    color: #8DC63F;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: .3s ease;
+    padding: 10px;
 }
 
 .paint-persone-content button:hover{
@@ -1064,18 +1046,13 @@ img{
     flex-direction: column;
     gap: 25px;
     width: 100%;
-    margin-top: 80px;
+    margin-top: 60px;
     padding-left: 10px;
     padding-right: 10px;
 }
 
 .about-us-title {
-    font-family: "Oswald", "sans-serif";
-    font-style: normal;
-    font-size: 26px;
-    text-transform: uppercase;
-    color: #1e1d24;
-    letter-spacing: 1px;
+    font-size: 28px;
 }
 
 .abou-us-stars {
@@ -1085,7 +1062,6 @@ img{
 
 .abou-us-stars i {
     font-size: 22px;
-    color: #ffd14b;
 }
 
 .about-us-text {
@@ -1093,11 +1069,8 @@ img{
 }
 
 .about-us-text p {
-    font-family: "Poppins", "sans-serif";
-    font-size: normal;
-    font-size: 12px;
-    font-weight: 400;
-    color: #1e1d24;
+    font-size: 14px;
+    font-weight: 500;
 }
 
 .about-us-content {
@@ -1114,8 +1087,7 @@ img{
 }
 
 .about-us-content-information-icon i {
-    font-size: 48px;
-    color: #8DC63F;
+    font-size: 52px;
 }
 
 .about-us-content-information {
@@ -1125,20 +1097,12 @@ img{
 }
 
 .about-us-content-information h2 {
-    font-family: "Oswald", "sans-serif";
-    font-style: normal;
-    font-size: 18px;
-    color: #2a6b84;
-    text-transform: uppercase;
-    letter-spacing: 1px;
+    font-size: 20px;
 }
 
 .about-us-content-information p {
-    font-family: "Poppins", "sans-serif";
-    font-style: normal;
-    font-size: 12px;
+    font-size: 14px;
     font-weight: 500;
-    color: #252525;
 }
 /* About-us Media Style end */
 
@@ -1150,16 +1114,11 @@ img{
     align-items: center;
     flex-direction: column;
     width: 100%;
-    margin-top: 80px;
+    margin-top: 60px;
 }
 
 .galery-title {
-    font-family: "Oswald", "sans-serif";
-    font-style: normal;
-    font-size: 18px;
-    text-transform: uppercase;
-    color: #1e1d24;
-    letter-spacing: 1px;
+    font-size: 28px;
     margin-bottom: 30px;
 }
 
@@ -1273,68 +1232,37 @@ img{
 .get-started {
     width: 100%;
     height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     flex-direction: column;
-    margin-top: 80px;
-    background-color: #8DC63F;
+    margin-top: 60px;
 }
 
 .get-started-content {
     width: 100%;
-    padding: 15px;
+    padding: 0 10px;
+    margin: 15px 0;
 }
 
 .get-started-content-title {
     font-size: 26px;
-    font-style: normal;
-    font-family: "Oswald", "sans-serif";
-    color: #FFFFFF;
 }
 
 .get-started-content-subtitle {
     font-size: 18px;
-    font-style: normal;
-    font-family: "Poppins", "sans-serif";
-    font-weight: 500;
-    color: #FFFFFF;
-    margin: 18px 0;
+    margin: 10px 0;
 }
 
 .get-started-content-title-description {
-    font-size: 16px;
-    font-style: normal;
-    font-family: "Poppins", "sans-serif";
-    font-weight: 500;
-    color: #FFFFFF;
+    font-size: 14px;
 }
-
 
 .get-started-content-button {
     margin-top: 20px;
-    font-family: "Oswald", "sans-serif";
     font-size: 16px;
-    font-style: normal;
-    letter-spacing: 1px;
-    font-weight: 600;
-    text-transform: uppercase;
-    padding: 5px;
-    border: none;
-    border: 1px solid #2a6b84;
-    color: #2a6b84;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: .3s ease;
-}
-
-.get-started-content-button:hover{
-    border: 1px solid #8DC63F;
-    color: #8DC63F;
+    padding: 10px;
 }
 
 .get-started-img {
-    width: 100px;
+    width: 180px;
 }
 /* Get Started Media Style End */
 
@@ -1344,7 +1272,6 @@ img{
     width: 100%;
     padding: 40px 0;
     margin-top: 60px;
-    background-color: #252525;
 }
 
 .footer-content{
@@ -1374,16 +1301,11 @@ img{
 .footer-content-contact h3,
 .footer-content-links h3,
 .footer-content-social h3{
-    font-family: "Oswald", "sans-serif";
-    letter-spacing: 1px;
     margin-bottom: 10px;
-    color: #8DC63F;
 }
 
 .footer-content-about p {
     font-size: 14px;
-    font-family: "Poppins", "sans-serif";
-    color: whitesmoke;
 }
 
 .footer-contact-adresse, .footer-contact-phone, .footer-contact-email {
@@ -1393,24 +1315,19 @@ img{
 }
 
 .footer-contact-phone i, .footer-contact-email i {
-    color: #fac564;
     font-size: 18px;
 }
 
 .footer-contact-adresse i {
     font-size: 24px;
-    color: #fac564;
 }
 
 .footer-contact-adresse p, .footer-contact-phone p, .footer-contact-email p {
-    font-family: "Poppins", "sans-serif";
     font-size: 14px;
-    color: whitesmoke;
 }
 
 .footer-contact-adresse-p {
     margin: 15px 0 15px 0;
-    color: whitesmoke;
 }
 
 
@@ -1425,28 +1342,13 @@ img{
 }
 
 .footer-content-links ul li a {
-    font-family: "Poppins", "sans-serif";
     font-size: 15px;
-    letter-spacing: 1px;
-    color: whitesmoke;
-    text-decoration: none;
-    transition: .3s;
-}
-
-.footer-content-links ul li a:hover {
-    color: #fac564;
 }
 
 .footer-content-social a {
     margin-right: 10px;
     font-size: 24px;
-    color: whitesmoke;
 }
-
-.footer-content-social a:hover {
-    color: #fac564;
-}
-
 /* Footer Media Style End */
 }
 
@@ -1454,8 +1356,8 @@ img{
     .header {
         padding: 0 5px;
     }
-    /* Swiper Media Style Start */
 
+/* Swiper Media Style Start */
 
 .swiper-slide-content {
     gap: 15px;
@@ -1466,140 +1368,130 @@ img{
 }
 
 @media (max-width: 490px) {
-    .swiper-slide-content {
-        gap: 15px;
-        padding: 40px 15px;
+
+.swiper-slide-content {
+    gap: 15px;
+    padding: 40px 15px;
         border-radius: 5px;
-    }
+}
     
-    .swiper-slide-content h2 {
-        font-size: 22px;
-        letter-spacing: 1px;
-    }
+.swiper-slide-content h2 {
+    font-size: 22px;
+    letter-spacing: 1px;
+}
     
-    .swiper-slide-content-description {
-        font-size: 13px;
-        font-weight: 600;
-    }
+.swiper-slide-content-description {
+    font-size: 13px;
+    font-weight: 600;
+}
     
-    .swiper-slide-content-contact-information {
-        font-size: 15px;
-        font-weight: 600;
-    }
+.swiper-slide-content-contact-information {
+    font-size: 15px;
+    font-weight: 600;
+}
     
-    .swiper-slide-content-buttons {
-        gap: 30px;
-    }
+.swiper-slide-content-buttons {
+    gap: 30px;
+}
     
-    .swiper-slide-content-contact-devis-button{
-        padding: 5px;
-        font-weight: 500;
-        font-size: 10px;
-    }
-    
-    .swiper-slide-content-contact-devis-button{
-        color: #8DC63F;
-        background-color: #FFFFFF;
-    
-    }
-    
-    .swiper-slide-content-contact-about-button{
-        padding: 5px;
-        font-weight: 500;
-        font-size: 10px;
-    }
-    
-    
-    .swiper-slide-content-contact-final-information{
-        font-size: 12px;
-        font-weight: 600;
-        letter-spacing: 0.5px;
-    }
-    /* Swiper Media Style End */
-
-    /* Services Media Style Start */
-    .services {
-        margin-top: 50px;
-        gap: 30px;
-    }
-
-    .services-title h1 {
-        font-size: 26px;
-    }
-
-    .services-row {
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
-    }
-
-    .service-nom{
-        font-size: 26px;
-        font-style: normal;
-        font-family: "Oswald", "sans-serif";
-        color: #1e1d24;
-        text-transform: uppercase;
-    }
-
-.service-description {
-    text-align: center;
-    font-size: 16px;
-    font-family: "Poppins", "sans-serif";
+.swiper-slide-content-contact-devis-button{
+    padding: 5px;
     font-weight: 500;
+    font-size: 10px;
+}
+    
+.swiper-slide-content-contact-about-button{
+    padding: 5px;
+    font-weight: 500;
+    font-size: 10px;
+}
+    
+    
+.swiper-slide-content-contact-final-information{
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+/* Swiper Media Style End */
+
+/* Services Media Style Start */
+.services {
+    margin-top: 50px;
+    gap: 30px;
 }
 
+
+.services-row {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.service {
+    width: 350px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 15px;
+    gap: 20px;
+}
+
+.service-nom{
+    font-size: 28px;
+}
+
+.service-description {
+    font-size: 16px;
+    font-weight: 500;
+}
 /* Services Media Style End */
 }
 
 @media (max-width: 425px) {
-    .swiper-slide-content {
-        gap: 15px;
-        padding: 30px 10px;
-        border-radius: 5px;
-    }
+.swiper-slide-content {
+    gap: 15px;
+    padding: 30px 10px;
+    border-radius: 5px;
+}
+
+.swiper-slide-content h2 {
+    font-size: 22px;
+    letter-spacing: 1px;
+}
+
+.swiper-slide-content-description {
+    font-size: 12px;
+    font-weight: 600;
+}
     
-    .swiper-slide-content h2 {
-        font-size: 22px;
-        letter-spacing: 1px;
-    }
+.swiper-slide-content-contact-information {
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.swiper-slide-content-buttons {
+    gap: 30px;
+}
+
+.swiper-slide-content-contact-devis-button{
+    padding: 5px;
+    font-weight: 500;
+    font-size: 10px;
+}
     
-    .swiper-slide-content-description {
-        font-size: 12px;
-        font-weight: 600;
-    }
-    
-    .swiper-slide-content-contact-information {
-        font-size: 12px;
-        font-weight: 600;
-    }
-    
-    .swiper-slide-content-buttons {
-        gap: 30px;
-    }
-    
-    .swiper-slide-content-contact-devis-button{
-        padding: 5px;
-        font-weight: 500;
-        font-size: 10px;
-    }
-    
-    .swiper-slide-content-contact-devis-button{
-        color: #8DC63F;
-        background-color: #FFFFFF;
-    
-    }
-    
-    .swiper-slide-content-contact-about-button{
-        padding: 5px;
-        font-weight: 500;
-        font-size: 10px;
-    }
-    
-    
-    .swiper-slide-content-contact-final-information{
-        font-size: 11px;
-        font-weight: 600;
-        letter-spacing: 0.5px;
-    }
+
+.swiper-slide-content-contact-about-button{
+    padding: 5px;
+    font-weight: 500;
+    font-size: 10px;
+}
+
+
+.swiper-slide-content-contact-final-information{
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
     /* Swiper Media Style End */
 }
