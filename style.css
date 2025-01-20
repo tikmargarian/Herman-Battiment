@@ -357,7 +357,7 @@ img{
     text-transform: uppercase;
 }
 
-.serive-description {
+.service-description {
     text-align: center;
     font-size: 16px;
     font-family: "Poppins", "sans-serif";
@@ -379,8 +379,6 @@ img{
 }
 
 .paint-persone-foto {
-    display: flex;
-    align-self: flex-end;
     width: 700px;
 }
 
@@ -428,6 +426,7 @@ img{
 
 /* Paint Persone End */
 
+/* About-us Style Start */
 .about-us {
     display: flex;
     flex-direction: column;
@@ -509,6 +508,7 @@ img{
     font-weight: 500;
     color: #252525;
 }
+/* About-us Style end */
 
 /* Galery Style Start */
 
@@ -902,117 +902,36 @@ img{
     height: 400px;
 }
 
-.swiper-slide {
-    text-align: center;
-    background: #fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.slide-1 {
-    background-image: url("./images/home-painter-slider-1.jpg");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
-.slide-2 {
-    background-image: url("./images/CAOY1224.JPG");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
-.slide-3 {
-    background-image: url("./images/papier-peint.jpg");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
-.slide-4 {
-    background-image: url("./images/type-parquet.jpg");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
-.swiper-transparent {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: rgba(0, 0, 0, 0.3);
-}
 
 .swiper-slide-content {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
     gap: 15px;
-    background-color: rgba(255, 255, 255, .8);
     padding: 80px;
     border-radius: 5px;
-    opacity: 0;
-    transform: translateY(50px);
-    transition: opacity 1s, transform 1s;
-}
-
-.swiper-slide.swiper-slide-active .swiper-slide-content {
-    opacity: 1;
-    transform: translateY(0);
 }
 
 .swiper-slide-content h2 {
     font-size: 24px;
-    color: #1e1d24;
-    font-family: "Oswald", "sans-serif";
-    font-style: normal;
-    text-transform: uppercase;
     letter-spacing: 1px;
 }
 
 .swiper-slide-content-description {
     font-size: 14px;
-    color: #1e1d24;
-    font-family: "Poppins", "sans-serif";
-    font-style: normal;
     font-weight: 600;
 }
 
 .swiper-slide-content-contact-information {
     font-size: 16px;
-    color: #252525;
-    font-family: "Poppins", "sans-serif";
-    font-style: normal;
     font-weight: 600;
 }
 
 .swiper-slide-content-buttons {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     gap: 30px;
 }
 
 .swiper-slide-content-contact-devis-button{
     padding: 5px;
-    color: white;
-    font-family: "Oswald", "sans-serif";
-    text-transform: uppercase;
-    font-style: normal;
     font-weight: 500;
     font-size: 10px;
-    letter-spacing: 1px;
-    border: none;
-    border: 1px solid #8DC63F;
-    background-color: #8DC63F;
-    border-radius: 3px;
-    cursor: pointer;
-    transition: .5s ease;
 }
 
 .swiper-slide-content-contact-devis-button{
@@ -1023,39 +942,412 @@ img{
 
 .swiper-slide-content-contact-about-button{
     padding: 5px;
-    color: #8DC63F;
-    font-family: "Oswald", "sans-serif";
-    text-transform: uppercase;
-    font-style: normal;
     font-weight: 500;
     font-size: 10px;
-    letter-spacing: 1px;
-    border: none;
-    border: 1px solid #8DC63F;
-    background-color: white;
-    border-radius: 3px;
-    cursor: pointer;
-    transition: .5s ease;
 }
 
-.swiper-slide-content-contact-about-button{
-    color: #FFFFFF;
-    background-color: #8DC63F;
-}
 
 .swiper-slide-content-contact-final-information{
     font-size: 14px;
-    color: #1e1d24;
-    font-family: "Poppins", "sans-serif";
-    font-style: normal;
     font-weight: 600;
     letter-spacing: 0.5px;
 }
-
-.swiper-slide.swiper-slide-active .swiper-slide-content h2,
-.swiper-slide.swiper-slide-active .swiper-slide-content p,
-.swiper-slide.swiper-slide-active .swiper-slide-content-buttons {
-    animation: slideUp 1s ease-out forwards;
-}
 /* Swiper Media Style End */
+
+/* Services Media Style Start */
+.services {
+    margin-top: 50px;
+    gap: 30px;
+}
+
+.services-title h1 {
+    font-size: 28px;
+}
+
+.services-row {
+    flex-direction: column;
+    gap: 20px;
+}
+
+.service-nom{
+    font-size: 28px;
+    font-style: normal;
+    font-family: "Oswald", "sans-serif";
+    color: #1e1d24;
+    text-transform: uppercase;
+}
+
+.service-description {
+    text-align: center;
+    font-size: 16px;
+    font-family: "Poppins", "sans-serif";
+    font-weight: 500;
+}
+
+/* Services Media Style End */
+
+/* Paint Persone Media Start */
+
+.paint-persone {
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 50px;
+    background-color: #8DC63F;
+}
+
+.paint-persone-foto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+}
+
+.paint-persone-content {
+    display: flex;
+    flex-direction: column;
+    gap: 23px;
+    width: 300px;
+    margin-left: 30px;
+}
+
+.paint-persone-content h2 {
+    color: #FFFFFF;
+    font-family: "Oswald", "sans-serif";
+    font-size: 18px;
+}
+
+.paint-persone-content p {
+    color: #FFFFFF;
+    font-family: "Poppins", "sans-serif";
+    font-size: 12px;
+    font-style: normal;
+}
+
+.paint-persone-content button {
+    font-family: "Oswald", "sans-serif";
+    font-size: 12px;
+    font-style: normal;
+    letter-spacing: 1px;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 5px;
+    border: none;
+    border: 1px solid #8DC63F;
+    color: #8DC63F;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .3s ease;
+}
+
+.paint-persone-content button:hover{
+    border: 1px solid #2a6b84;
+    color: #2a6b84;
+}
+
+/* Paint Persone media style End */
+
+/* About-us Media Style Start */
+.about-us {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    width: 100%;
+    margin-top: 80px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.about-us-title {
+    font-family: "Oswald", "sans-serif";
+    font-style: normal;
+    font-size: 26px;
+    text-transform: uppercase;
+    color: #1e1d24;
+    letter-spacing: 1px;
+}
+
+.abou-us-stars {
+    display: flex;
+    gap: 15px;
+}
+
+.abou-us-stars i {
+    font-size: 22px;
+    color: #ffd14b;
+}
+
+.about-us-text {
+    width: 350px;
+}
+
+.about-us-text p {
+    font-family: "Poppins", "sans-serif";
+    font-size: normal;
+    font-size: 12px;
+    font-weight: 400;
+    color: #1e1d24;
+}
+
+.about-us-content {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    margin-top: 30px;
+}
+
+.about-us-content-information-block {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.about-us-content-information-icon i {
+    font-size: 72px;
+    color: #8DC63F;
+}
+
+.about-us-content-information {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.about-us-content-information h2 {
+    font-family: "Oswald", "sans-serif";
+    font-style: normal;
+    font-size: 28xp;
+    color: #2a6b84;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.about-us-content-information p {
+    font-family: "Poppins", "sans-serif";
+    font-style: normal;
+    font-size: 18px;
+    font-weight: 500;
+    color: #252525;
+}
+/* About-us Media Style end */
+
+/* Galery Media Style Start */
+
+.galery {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 80px;
+}
+
+.galery-title {
+    font-family: "Oswald", "sans-serif";
+    font-style: normal;
+    font-size: 18px;
+    text-transform: uppercase;
+    color: #1e1d24;
+    letter-spacing: 1px;
+    margin-bottom: 30px;
+}
+
+.galery-row {
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    gap: 5px;
+}
+
+.galery-row-image-box {
+    width: 300px;
+}
+
+.galery-row-image-box:hover img{
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+/* Galery Media Style End */
+
+/* Get Started Media Style Start */
+.get-started {
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 80px;
+    background-color: #8DC63F;
+}
+
+.get-started-content {
+    width: 350px;
+}
+
+.get-started-content-title {
+    font-size: 26px;
+    font-style: normal;
+    font-family: "Oswald", "sans-serif";
+    color: #FFFFFF;
+}
+
+.get-started-content-subtitle {
+    font-size: 18px;
+    font-style: normal;
+    font-family: "Poppins", "sans-serif";
+    font-weight: 500;
+    color: #FFFFFF;
+    margin: 18px 0;
+}
+
+.get-started-content-title-description {
+    font-size: 16px;
+    font-style: normal;
+    font-family: "Poppins", "sans-serif";
+    font-weight: 500;
+    color: #FFFFFF;
+}
+
+
+.get-started-content-button {
+    margin-top: 20px;
+    font-family: "Oswald", "sans-serif";
+    font-size: 16px;
+    font-style: normal;
+    letter-spacing: 1px;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 5px;
+    border: none;
+    border: 1px solid #2a6b84;
+    color: #2a6b84;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .3s ease;
+}
+
+.get-started-content-button:hover{
+    border: 1px solid #8DC63F;
+    color: #8DC63F;
+}
+
+.get-started-img {
+    width: 100px;
+}
+/* Get Started Media Style End */
+
+/* Footer Media Style Start */
+
+.footfer {
+    width: 100%;
+    padding: 40px 0;
+    margin-top: 60px;
+    background-color: #252525;
+}
+
+.footer-content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-content-about{
+    width: 350px;
+}
+
+.footer-content-contact{
+    width: 300px;
+}
+
+.footer-content-links,
+.footer-content-social {
+    width: 150px;
+}
+
+.footer-content-about h3,
+.footer-content-contact h3,
+.footer-content-links h3,
+.footer-content-social h3{
+    font-family: "Oswald", "sans-serif";
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+    color: #8DC63F;
+}
+
+.footer-content-about p {
+    font-size: 14px;
+    font-family: "Poppins", "sans-serif";
+    color: whitesmoke;
+}
+
+.footer-contact-adresse, .footer-contact-phone, .footer-contact-email {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.footer-contact-phone i, .footer-contact-email i {
+    color: #fac564;
+    font-size: 18px;
+}
+
+.footer-contact-adresse i {
+    font-size: 24px;
+    color: #fac564;
+}
+
+.footer-contact-adresse p, .footer-contact-phone p, .footer-contact-email p {
+    font-family: "Poppins", "sans-serif";
+    font-size: 14px;
+    color: whitesmoke;
+}
+
+.footer-contact-adresse-p {
+    margin: 15px 0 15px 0;
+    color: whitesmoke;
+}
+
+
+.footer-content-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-content-links li {
+    list-style: none;
+    margin-bottom: 2px;
+}
+
+.footer-content-links ul li a {
+    font-family: "Poppins", "sans-serif";
+    font-size: 15px;
+    letter-spacing: 1px;
+    color: whitesmoke;
+    text-decoration: none;
+    transition: .3s;
+}
+
+.footer-content-links ul li a:hover {
+    color: #fac564;
+}
+
+.footer-content-social a {
+    margin-right: 10px;
+    font-size: 24px;
+    color: whitesmoke;
+}
+
+.footer-content-social a:hover {
+    color: #fac564;
+}
+
+/* Footer Media Style End */
 }
