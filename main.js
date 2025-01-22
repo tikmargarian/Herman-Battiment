@@ -58,3 +58,48 @@ document.querySelectorAll(".navbar-items li a").forEach(item =>
     hamburger.classList.remove("active");
     navbarItems.classList.remove("active");
 }))
+
+document.addEventListener('DOMContentLoaded', () => {
+    const openPopup = document.querySelector('.swiper-slide-content-contact-devis-button');
+    const closePopup = document.getElementById('closePopup');
+    const popup = document.getElementById('popup');
+    const contactForm = document.getElementById('contactForm');
+  
+    // Инициализация EmailJS
+    emailjs.init('aNY0-EMR99N3Lj_BE'); // Замените YOUR_USER_ID на ваш ID из EmailJS
+  
+    openPopup.addEventListener('click', () => {
+      popup.classList.remove('hidden');
+    });
+  
+    closePopup.addEventListener('click', () => {
+      popup.classList.add('hidden');
+    });
+  
+    contactForm.addEventListener('submit', (event) => {
+      event.preventDefault();
+  
+      const form = event.target; // Получаем форму
+    
+      // Данные формы
+      const formData = {
+        from_name: form.name.value, // Имя клиента
+        destination: form.destination.value, // Назначение
+        phone: form.phone.value, // Телефон клиента
+        message: form.description.value, // Описание задачи
+      };
+    
+      // Отправка через EmailJS
+      emailjs
+        .send('service_g3kgo4c', 'template_ocpvvym', formData)
+        .then(() => {
+          alert('Votre message a été envoyé avec succès !');
+          form.reset(); // Сброс формы
+          popup.classList.add('hidden'); // Закрытие popup, если используется
+        })
+        .catch((error) => {
+          console.error('Error:', error);
+          alert('Une erreur est survenue. Veuillez réessayer plus tard.');
+        });
+    });  
+});
