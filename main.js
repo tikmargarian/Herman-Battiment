@@ -60,7 +60,7 @@ document.querySelectorAll(".navbar-items li a").forEach(item =>
 }))
 
 document.addEventListener('DOMContentLoaded', () => {
-    const openPopup = document.querySelector('.swiper-slide-content-contact-devis-button');
+    const openPopup = document.querySelectorAll('.swiper-slide-content-contact-devis-button, .devis-button');
     const closePopup = document.getElementById('closePopup');
     const popup = document.getElementById('popup');
     const contactForm = document.getElementById('contactForm');
@@ -68,9 +68,11 @@ document.addEventListener('DOMContentLoaded', () => {
     // Инициализация EmailJS
     emailjs.init('aNY0-EMR99N3Lj_BE'); // Замените YOUR_USER_ID на ваш ID из EmailJS
   
-    openPopup.addEventListener('click', () => {
-      popup.classList.remove('hidden');
-    });
+    openPopup.forEach((button) => {
+        button.addEventListener("click", function() {
+            popup.classList.remove('hidden');
+        })
+    })
   
     closePopup.addEventListener('click', () => {
       popup.classList.add('hidden');
