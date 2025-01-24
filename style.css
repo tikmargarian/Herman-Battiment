@@ -227,14 +227,11 @@ html {
 
 .swiper-slide-content-contact-information {
     font-size: 26px;
-    color: #252525;
+    color: #252525 !important;
+    text-decoration: none !important;
     font-family: "Poppins", "sans-serif";
     font-style: normal;
     font-weight: 600;
-    text-decoration: none;
-    -webkit-touch-callout: none;
-    -webkit-user-select: none; 
-    user-select: none;
 }
 
 .swiper-slide-content-buttons {
@@ -796,7 +793,11 @@ html {
 .footer-contact-adresse p, .footer-contact-phone p, .footer-contact-email p {
     font-family: "Poppins", "sans-serif";
     font-size: 14px;
-    color: whitesmoke;
+    color: whitesmoke !important;
+}
+
+.footer-contact-phone p {
+    text-decoration: none !important;
 }
 
 .footer-contact-adresse-p {
