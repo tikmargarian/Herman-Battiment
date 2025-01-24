@@ -234,6 +234,12 @@ html {
     font-weight: 600;
 }
 
+.swiper-slide-content-contact-information:hover, 
+.swiper-slide-content-contact-information:active, 
+.swiper-slide-content-contact-information:focus {
+  color: #252525 !important;
+}
+
 .swiper-slide-content-buttons {
     display: flex;
     justify-content: center;
@@ -798,6 +804,12 @@ html {
 
 .footer-contact-phone p {
     text-decoration: none !important;
+}
+
+.footer-contact-phone p:hover, 
+.footer-contact-phone p:active, 
+.footer-contact-phone p:focus {
+  color: #252525 !important;
 }
 
 .footer-contact-adresse-p {
