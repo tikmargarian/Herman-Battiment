@@ -66,7 +66,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const contactForm = document.getElementById('contactForm');
   
     // Инициализация EmailJS
-    emailjs.init('aNY0-EMR99N3Lj_BE'); // Замените YOUR_USER_ID на ваш ID из EmailJS
+    emailjs.init('ksgPraQRrKwGeAiFn'); // Замените YOUR_USER_ID на ваш ID из EmailJS
   
     openPopup.forEach((button) => {
         button.addEventListener("click", function() {
@@ -93,7 +93,7 @@ document.addEventListener('DOMContentLoaded', () => {
     
       // Отправка через EmailJS
       emailjs
-        .send('service_g3kgo4c', 'template_ocpvvym', formData)
+        .send('service_88pp82e', 'template_blgbjhv', formData)
         .then(() => {
           alert('Votre message a été envoyé avec succès !');
           form.reset(); // Сброс формы
